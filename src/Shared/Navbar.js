@@ -1,6 +1,15 @@
 import React from "react";
-
+import { NavLink } from "react-router-dom";
 const Navbar = ({ children }) => {
+  const menuItem = (
+    <>
+      <li>
+        <NavLink className="rounded-lg" to="/signin">
+          SignIn
+        </NavLink>
+      </li>
+    </>
+  );
   return (
     <div class="drawer">
       <input id="my-drawer-3" type="checkbox" class="drawer-toggle" />
@@ -24,33 +33,23 @@ const Navbar = ({ children }) => {
               </svg>
             </label>
           </div>
-          <div class="flex-1 px-2 mx-2">Navbar Title</div>
+          <div class="flex-1 px-2 mx-2 text-3xl font-bold">STUDY 360</div>
           <div class="flex-none hidden lg:block">
             <ul class="menu menu-horizontal">
               {/* <!-- Navbar menu content here --> */}
-              <li>
-                <a>Navbar Item 1</a>
-              </li>
-              <li>
-                <a>Navbar Item 2</a>
-              </li>
+              {menuItem}
             </ul>
           </div>
         </div>
         {/* <!-- Page content here --> */}
-        Content
+
         {children}
       </div>
       <div class="drawer-side">
         <label for="my-drawer-3" class="drawer-overlay"></label>
         <ul class="menu p-4 overflow-y-auto w-80 bg-base-100">
           {/* <!-- Sidebar content here --> */}
-          <li>
-            <a>Sidebar Item 1</a>
-          </li>
-          <li>
-            <a>Sidebar Item 2</a>
-          </li>
+          {menuItem}
         </ul>
       </div>
     </div>
