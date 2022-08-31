@@ -5,7 +5,7 @@ import {
 } from "react-firebase-hooks/auth";
 import auth from "../../firebase.init";
 import { useForm } from "react-hook-form";
-import { Routes, Route, Link } from "react-router-dom";
+import { Routes, Route, Link, useNavigate } from "react-router-dom";
 
 import admission from "../../image/Gradient Modern Education Admission Open Instagram Post.jpg";
 import { async } from "@firebase/util";
@@ -13,6 +13,7 @@ const SignUp = () => {
   const [signInWithGoogle, gUser, gLoading, gError] = useSignInWithGoogle(auth);
   const [createUserWithEmailAndPassword, user, loading, error] =
     useCreateUserWithEmailAndPassword(auth);
+  let navigate = useNavigate();
   const {
     register,
     formState: { errors },
@@ -26,6 +27,9 @@ const SignUp = () => {
 
     console.log(data);
   };
+  if (user || gUser) {
+    navigate("/");
+  }
   return (
     <div class=" min-h-screen bg-base-200 py-14">
       <div class="  flex justify-evenly items-center">

@@ -5,11 +5,11 @@ import {
 } from "react-firebase-hooks/auth";
 import auth from "../../firebase.init";
 import { useForm } from "react-hook-form";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 import admission from "../../image/Gradient Modern Education Admission Open Instagram Post.jpg";
-import { async } from "@firebase/util";
 
+import { Navigate } from "react-router-dom";
 const Signin = () => {
   const [signInWithGoogle, gUser, gLoading, gError] = useSignInWithGoogle(auth);
   const [signInWithEmailAndPassword, user, loading, error] =
@@ -20,13 +20,16 @@ const Signin = () => {
     handleSubmit,
     watch,
   } = useForm();
-
+  let navigate = useNavigate();
   const onSubmit = async (data) => {
     await signInWithEmailAndPassword(data.email, data.password);
 
     console.log(data);
   };
   console.log(user);
+  if (user || gUser) {
+    navigate("/");
+  }
   return (
     <div class=" min-h-screen bg-base-200 py-14">
       <div class="  flex justify-evenly items-center">

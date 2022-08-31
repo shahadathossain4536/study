@@ -11,6 +11,9 @@ const Navbar = ({ children }) => {
   const menuItem = (
     <>
       <li>
+        <NavLink className="rounded-lg mr-2" to="/home">
+          Home
+        </NavLink>
         {user ? (
           <button
             onClick={logout}
@@ -19,7 +22,7 @@ const Navbar = ({ children }) => {
             Sign Out
           </button>
         ) : (
-          <NavLink className="rounded-lg" to="/signin">
+          <NavLink className="rounded-lg mr-2" to="/signin">
             SignIn
           </NavLink>
         )}
