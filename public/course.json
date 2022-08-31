@@ -1,0 +1,38 @@
+
+
+
+[
+    {
+    "_id" : 1,
+    "courseName": "JSC",
+    "courseDuration" : "10",
+    "courseInstructor" : "Fahim Sarker",
+    "courseFee": "5000",
+    "liveClass": "yes",
+    "assignment":"yes",
+    "img": "https://i.ibb.co/LhvdgqM/jsc.png"
+
+    },
+    {
+    "_id" : 2,
+    "courseName": "SSC",
+    "courseDuration" : "12",
+    "courseInstructor" : "Raziv Ahmed",
+    "courseFee": "8000",
+    "liveClass": "yes",
+    "assignment":"yes",
+    "img": "https://i.ibb.co/7bKBqmn/ssc.png"
+    },
+    {
+    "_id" : 3,
+    "courseName": "HSC",
+    "courseDuration" : "10",
+    "courseInstructor" : "Azim  Khan",
+    "courseFee": "10000",
+    "liveClass": "yes",
+    "assignment":"yes",
+    "img": "https://i.ibb.co/ZLsHXrL/hsc.png"
+    }
+
+
+]

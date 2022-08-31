@@ -14,6 +14,13 @@ const Navbar = ({ children }) => {
         <NavLink className="rounded-lg mr-2" to="/home">
           Home
         </NavLink>
+        <NavLink className="rounded-lg mr-2" to="/course">
+          Our Course
+        </NavLink>
+        <NavLink className="rounded-lg mr-2" to="/about">
+          About
+        </NavLink>
+
         {user ? (
           <button
             onClick={logout}
@@ -34,7 +41,7 @@ const Navbar = ({ children }) => {
       <input id="my-drawer-3" type="checkbox" class="drawer-toggle" />
       <div class="drawer-content flex flex-col">
         {/* <!-- Navbar --> */}
-        <div class="w-full navbar bg-base-300">
+        <div class="w-full navbar bg-base-300 ">
           <div class="flex-none lg:hidden">
             <label for="my-drawer-3" class="btn btn-square btn-ghost">
               <svg
