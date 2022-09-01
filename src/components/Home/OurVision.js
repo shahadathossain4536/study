@@ -3,8 +3,8 @@ import background1 from "../../image/background1.png";
 const OurVision = () => {
   return (
     <div className="my-10">
-      <h1 className="text-center text-7xl my-6">Our Vision</h1>
-      <p className="mx-80 text-3xl text-justify leading-10">
+      <h1 className="text-center text-5xl lg:text-7xl my-6">Our Vision</h1>
+      <p className="mx-10 lg:mx-80 sm:text-xl lg:text-3xl text-justify sm:leading-5 lg:leading-10">
         Above all, your mission statement is a marketing asset that is meant to
         be clear, concise, and free of fluff. It should clearly outline the
         purpose of your company offering and demonstrate the common goals the

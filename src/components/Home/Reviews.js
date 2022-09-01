@@ -9,7 +9,7 @@ const Reviews = () => {
   }, []);
   return (
     <div className="my-20">
-      <h1 className="text-center text-7xl my-6">Our Vision</h1>
+      <h1 className="text-center text-5xl lg:text-7xl my-6">Our Vision</h1>
       <div className="flex justify-center items-center">
         <div className="grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 gap-10">
           {reviews.slice(0, 3).map((review) => (
@@ -34,7 +34,7 @@ const Reviews = () => {
         </div>
       </div>
       <div className="flex justify-end items-end">
-        <button className="btn btn-sm mr-28 mt-12">See all</button>
+        <button className="btn btn-sm lg:mr-28 mt-12">See all</button>
       </div>
     </div>
   );

@@ -18,7 +18,7 @@ const Course = () => {
   return (
     <div>
       {" "}
-      <h1 className="text-center text-7xl my-6">Our Course</h1>
+      <h1 className="text-center text-5xl lg:text-7xl my-6">Our Course</h1>
       <div className="flex justify-center items-center my-20">
         <div className="grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 gap-20 ">
           {courses.map((course) => (
