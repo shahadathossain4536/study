@@ -8,7 +8,7 @@ import Signin from "./components/Auth/Signin";
 import NotFound from "./Shared/NotFound";
 import Course from "./components/Course/Course";
 import About from "./components/About/About";
-
+import "swiper/css/bundle";
 function App() {
   return (
     <div className="">
